@@ -10,10 +10,11 @@ public class Joker{
     public void tellJoke(){
         Joke joke = list.returnJoke();
         
+        ColoredOutput colwindow = new ColoredOutput();
+        colwindow.output(joke);
+
         Output window = new Output();
         window.output(joke);
 
-        ColoredOutput colwindow = new ColoredOutput();
-        colwindow.output(joke);
     }
 }
