@@ -10,7 +10,15 @@ public class Jokelist{
 
         new Joke ("'Racist' Joke"),
 
-        new Joke ("Anti-Religious Joke")
+        new Joke ("Anti-Religious Joke"),
+
+        new Joke ("Anti-Vegan Joke"),
+
+        new Joke ("Anti-Christ Joke"),
+
+        new Joke ("Anti-Jew Joke"),
+
+        new Joke ("Anti-Muslim Joke")
     };
     
     //randomnumbergenerator

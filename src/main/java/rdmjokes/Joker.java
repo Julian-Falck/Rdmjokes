@@ -13,8 +13,11 @@ public class Joker{
         ColoredOutput colwindow = new ColoredOutput();
         colwindow.output(joke);
 
-        Output window = new Output();
+        ConsOutput window = new ConsOutput();
         window.output(joke);
+
+        GuiOutput guiwindow = new GuiOutput();
+        guiwindow.output(joke);
 
     }
 }
