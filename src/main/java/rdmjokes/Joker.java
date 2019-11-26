@@ -2,22 +2,32 @@ package rdmjokes;
 
 import rdmjokes.Jokelist;
 
+import java.util.Random;
+
 public class Joker{
 
     private Jokelist list = new Jokelist();
+    
+    //Colored Terminal Output
+    Output colwindow = new ColoredOutput();
+
+    //Normal Terminal Output
+    Output window = new ConsOutput();
+
+    //GUI Output
+    Output guiwindow = new GuiOutput();
 
     //use Jokelist to get a random joke
     public void tellJoke(){
         Joke joke = list.returnJoke();
         
-        ColoredOutput colwindow = new ColoredOutput();
-        colwindow.output(joke);
+        Output[] outputs = {
+            colwindow, window, guiwindow
+        };
 
-        ConsOutput window = new ConsOutput();
-        window.output(joke);
+        Random generator = new Random();
+        int index = generator.nextInt(outputs.length);
 
-        GuiOutput guiwindow = new GuiOutput();
-        guiwindow.output(joke);
-
+        outputs[index].output(joke);
     }
 }

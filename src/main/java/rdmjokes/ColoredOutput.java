@@ -4,7 +4,9 @@ import java.util.*;
 
 import java.awt.Color;
 
-public class ColoredOutput{
+
+
+public class ColoredOutput implements Output{
     
     //randomnumbergenerator
     private Random generator = new Random();

@@ -1,7 +1,7 @@
 package rdmjokes;
 
 
-public class ConsOutput{
+public class ConsOutput implements Output{
     
     public void output(Joke joke){
        
