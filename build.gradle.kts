@@ -30,5 +30,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = "Rdmjokes.App"
+    mainClassName = "rdmjokes.Main"
 }
